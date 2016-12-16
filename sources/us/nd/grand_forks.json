@@ -13,15 +13,15 @@
     "type": "ESRI",
     "conform": {
         "type": "geojson",
-        "number": {
-          "function": "remove_postfix",
-          "field": "addrnum",
-          "field_to_remove": "unitid"
-        },
         "street": {
             "function": "remove_prefix",
             "field": "fulladdr",
             "pattern": "addrnum"
+        },
+        "number": {
+          "function": "remove_postfix",
+          "field": "addrnum",
+          "field_to_remove": "unitid"
         },
         "unit": "unitid",
         "city": "municipality"
