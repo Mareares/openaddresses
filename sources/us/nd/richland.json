@@ -13,12 +13,12 @@
     "data": "https://c39gisserver.co.richland.nd.us/arcgis/rest/services/Cadastre/Parcel_Layer/MapServer/0",
     "conform": {
         "type": "geojson",
-        "number": {
-            "function": "prefixed_number",
-            "field": "Street_Address"
-        },
         "street": {
             "function": "postfixed_street",
+            "field": "Street_Address"
+        },
+        "number": {
+            "function": "prefixed_number",
             "field": "Street_Address"
         },
         "unit": "Apt"
