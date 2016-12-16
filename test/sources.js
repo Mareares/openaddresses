@@ -120,10 +120,10 @@ function checkSource(i){
                         } else if (data.conform[attrib].function === 'postfixed_street') {
                             t.ok(typeof data.conform[attrib].field === 'string', attrib + ' postfixed_street should reference a field');
                         } else if (data.conform[attrib].function === 'remove_prefix') {
-                          t.ok(data.conform[attrib].pattern, attrib + ' remove_prefix should have field_to_remove');
+                          t.ok(data.conform[attrib].field_to_remove, attrib + ' remove_prefix should have field_to_remove');
                           t.ok(typeof data.conform[attrib].field === 'string', attrib + ' remove_prefix should reference a field');
                         } else if (data.conform[attrib].function === 'remove_postfix') {
-                          t.ok(data.conform[attrib].pattern, attrib + ' remove_postfix should have field_to_remove');
+                          t.ok(data.conform[attrib].field_to_remove, attrib + ' remove_postfix should have field_to_remove');
                           t.ok(typeof data.conform[attrib].field === 'string', attrib + ' remove_postfix should reference a field');
                         } else {
                             t.fail(data.conform[attrib].function + ' function should be valid');
